@@ -14,7 +14,9 @@ export const ItemCount = ({ stock, name }) => {
                 <button disabled={itemsQty >= stock} className="btn btn--primary" onClick={() => setItemQty(itemsQty + 1)}>+</button>
 
             </div >
-
+            <div>
+                <button className="btn--medium">Agregar a carrito</button>
+            </div>
         </div>
     )
 

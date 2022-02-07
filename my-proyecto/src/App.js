@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import { NavBar } from './componets/Navbar/NavBar';
-import { Button } from './componets/Navbar/button'
+import { NavBar } from './componets/navbar/navbar';
+import { Button } from './componets/navbar/button'
+import { ItemCount } from './componets/Items/itemCount';
 
 
 
@@ -10,8 +11,7 @@ const App = () => {
     return (
         <>
             <NavBar />
-            <Button />
-
+            <ItemCount stock="10" />
 
 
         </>
