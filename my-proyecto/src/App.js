@@ -1,19 +1,20 @@
 import React from 'react';
 import './App.css';
 import { NavBar } from './componets/navbar/navbar';
-import { Button } from './componets/navbar/button'
-import { ItemCount } from './componets/Items/itemCount';
-
-
-
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Home from "./componets/home/home";
+import Cart from './componets/cart/cart';
+import { CartProvider } from "react-use-cart";
 
 const App = () => {
     return (
         <>
+
             <NavBar />
-            <ItemCount stock="10" />
-
-
+            <CartProvider>
+                <Home />
+                <Cart />
+            </CartProvider>
         </>
     )
 }
