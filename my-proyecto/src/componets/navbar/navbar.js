@@ -5,8 +5,7 @@ export const NavBar = () => {
         <nav className="Navegation">
             <ul>
                 <li>Inicio</li>
-                <li>Imagenes</li>
-                <li>Obras</li>
+                <li>Productos</li>
                 <li>Contacto</li>
             </ul>
         </nav>)
