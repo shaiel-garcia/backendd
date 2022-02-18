@@ -1,22 +1,34 @@
-import React from 'react';
+import React from "react";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Home } from "./componets/pages/home";
+import { ItemDetail } from "./componets/pages/itemDetail";
 import './App.css';
-import { NavBar } from './componets/navbar/navbar';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import Home from "./componets/home/home";
-import Cart from './componets/cart/cart';
-import { CartProvider } from "react-use-cart";
+import { ProductsByCategory } from "./componets/pages/productsByCategory";
+import { Cart } from "./componets/pages/cart";
+import { CartProvider } from "./componets/context/cartContext";
 
-const App = () => {
+
+
+function App() {
+
     return (
-        <>
+        < CartProvider>
+            <BrowserRouter>
+                <Routes>
+                    <Route exact path="/" element={<Home />} />
+                    <Route path="/categories/:category" element={<ProductsByCategory />} />
+                    <Route path="/item/:id" element={<ItemDetail />} />
+                    <Route path="/cart" element={<Cart />} />
+                </Routes>
+            </BrowserRouter>
+        </CartProvider>
+    );
 
-            <NavBar />
-            <CartProvider>
-                <Home />
-                <Cart />
-            </CartProvider>
-        </>
-    )
 }
 
 export default App;
+
+
+
+
