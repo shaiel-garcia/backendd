@@ -1,0 +1,18 @@
+.navegador {
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px; }
+  
+  .navegador__a {
+    font-style: italic; }
+  
+  .navegador__a--color {
+    color: rgb(7, 100, 57); }
+  
+  .navegador__diseño {
+    font-size: 15px;
+    font-family: serif; }
+  
+  .navegador__diseño--color {
+    text-decoration: #2c00f1; }
+  
