@@ -1,34 +1,19 @@
 import React from "react";
-
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import { Home } from "./componets/pages/home";
-import { ItemDetail } from "./componets/pages/itemDetail";
 import './App.css';
-import { ProductsByCategory } from "./componets/pages/productsByCategory";
-import { Cart } from "./componets/pages/cart";
-import { CartProvider } from "./componets/context/cartContext";
+import { NavBar } from './components/NavBar/NavBar';
+import CardComponent from "./components/CardComponent/CardComponent";
 
 
-
-function App() {
-
+const App = (props) => {
     return (
-        < CartProvider>
-            <BrowserRouter>
-                <Routes>
-                    <Route exact path="/" element={<Home />} />
-                    <Route path="/categories/:category" element={<ProductsByCategory />} />
-                    <Route path="/item/:id" element={<ItemDetail />} />
-                    <Route path="/cart" element={<Cart />} />
-                </Routes>
-            </BrowserRouter>
-        </CartProvider>
-    );
+        <>
 
+            <NavBar />
+            <CardComponent />
+
+        </>
+    )
 }
-
 export default App;
-
-
 
 
