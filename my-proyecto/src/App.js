@@ -1,7 +1,8 @@
 import React from "react";
 import './App.css';
 import { NavBar } from './components/NavBar/NavBar';
-import CardComponent from "./components/CardComponent/CardComponent";
+import Body from "./components/body/body";
+
 
 
 const App = (props) => {
@@ -9,7 +10,7 @@ const App = (props) => {
         <>
 
             <NavBar />
-            <CardComponent />
+            <Body />
 
         </>
     )

@@ -1,7 +1,6 @@
-
-import img1 from '../img/uva.jpg';
-
-
+import img1 from '../img/uvass.jpg';
+import img2 from '../img/sandia.jpg';
+import img3 from '../img/limones.jpg';
 
 const ItemListContainer = {
     productData: [
@@ -14,14 +13,14 @@ const ItemListContainer = {
         },
         {
             id: 2,
-            img: img1,
+            img: img2,
             title: 'Sandias',
             desc: '',
             price: 60,
         },
         {
             id: 3,
-            img: img1,
+            img: img3,
             title: 'Limones',
             desc: '',
             price: 30,
