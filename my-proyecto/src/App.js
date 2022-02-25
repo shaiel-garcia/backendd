@@ -1,18 +1,18 @@
 import React from "react";
 import './App.css';
 import { NavBar } from './components/NavBar/NavBar';
-import Body from "./components/body/body";
+import ItemListContainer from "./components/itemListContainer";
 
 
 
-const App = (props) => {
+function App() {
     return (
-        <>
+        <div>
 
             <NavBar />
-            <Body />
+            <ItemListContainer greeting="Bienvenidos" />
 
-        </>
+        </div>
     )
 }
 export default App;

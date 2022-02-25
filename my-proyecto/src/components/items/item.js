@@ -1,8 +1,8 @@
 import React from "react";
-import { useCart } from "react-use-cart";
 
 
-const CardComponent = (props) => {
+
+const Item = (props) => {
 
     return (
         <div className="col-11 col-md-6 col-lg-3 mx-0 mb-4">
@@ -23,4 +23,4 @@ const CardComponent = (props) => {
 
 
 
-export default CardComponent;
+export default Item;
