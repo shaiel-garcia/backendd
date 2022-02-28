@@ -1,15 +1,12 @@
 import React from "react";
-import Item from "../items/item";
+import { Item } from "./item"
 
-const ItemList = ({ productos }) => {
-
+export const ItemList = ({ products }) => {
     return (
-        <div className='row justify-content-center'>
-            {
-                productos.map((productos) => (
-                    <Item key={productos.id} props={productos}></Item>
-                ))
-            }
+        <div>
+            {products.map((product) => (
+                <Item key={product.name} product={product} />
+            ))}
         </div>
     )
 }
