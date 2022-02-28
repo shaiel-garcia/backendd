@@ -1,20 +1,23 @@
 import React, { useState } from "react";
+import "../button.css"
 
 
-function ItemCount() {
-    const [count, setCount] = useState(1);
+
+export const ItemCount = ({ stock, itemQuantity, setItemQuantity }) => {
+
 
     return (
-        <div className="my-5">
-            <h1 className="my-5"> {count}</h1>
-            <button className="btn btn-success mx-3" onClick={() => setCount(count + 1)}>+</button>
-            <button className="btn btn-danger mx-3" onClick={() => setCount(count - 1)} disabled={count === 0}>-</button>
-            <button className="btn btn-secondary mx-3" onClick={() => setCount(0)} disabled={count === 0}>Reset</button>
-        </div >
-    );
+        <div>
+            <div style={{ marginBotton: 10 }}>
+                <button disabled={itemQuantity <= 1} className="btn btn--primary" onClick={() => setItemQuantity(itemQuantity - 1)}>-</button>
+                <span style={{ margin: 10, fontSize: "3rem" }}>{itemQuantity}</span>
+                <button disabled={itemQuantity >= stock} className="btn btn--primary" onClick={() => setItemQuantity(itemQuantity + 1)}>+</button>
 
+            </div >
 
+        </div>
+    )
 
-};
+}
 
 export default ItemCount;
