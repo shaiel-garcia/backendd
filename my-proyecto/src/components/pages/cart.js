@@ -1,11 +1,12 @@
 import React from "react";
 import { useContext } from "react";
-import { CartContext } from "../contexts/cartContext";
+import { CartContext } from "../contexts/cardContext";
 import { CartListContainer } from "../cart/cartListContainer";
-import { CommonLayout } from "../layouts/cammonLayouts";
+import { CommonLayout } from "../layouts/cammonLayout";
 
 
 export const Cart = () => {
+
     const { products } = useContext(CartContext)
     return (
         <CommonLayout>

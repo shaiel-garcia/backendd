@@ -4,7 +4,7 @@ import { HeaderMenuLink } from "./headers/headerMenuLink"
 import { categoriesItems } from "../../constans/cammons"
 import { Logo } from "./headers/logo";
 import "./navBar.css"
-import "../../assets/estilos/layouts/header.scss"
+import "../../assets/scss/layouts/header.scss"
 
 class Header extends Component {
     render() {

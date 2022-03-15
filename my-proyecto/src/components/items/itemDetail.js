@@ -1,9 +1,9 @@
 import React from "react";
 import { useContext, useState } from "react"
 import { Link, NavLink } from "react-router-dom"
-import "../../assets/estilos/products/detail.css"
+import "../../assets/scss/products/detail.css"
 import { ItemCount } from "../items/itemCount"
-import { CartContext } from "../contexts/cartContext";
+import { CartContext } from "../contexts/cardContext";
 import "@fortawesome/react-fontawesome"
 
 
@@ -39,7 +39,7 @@ export const ItemDetail = ({ product }) => {
                     <p>{product.description}</p>
                     <ul>
                         <li>Available: <span>{product.stock}</span></li>
-                        <li>Category: <span>{product.category.name}</span></li>
+                        <li>Category: <span>{product.category}</span></li>
                     </ul>
                 </div>
 

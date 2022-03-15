@@ -8,7 +8,7 @@
 }
 
 .Navbar-logo {
-    color: rgb(240, 195, 154);
+    color: green;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -32,20 +32,20 @@
 
 .nav-links {
 
-    color: rgb(231, 194, 158);
+    color: green;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
 
 .nav-links:hover {
-    color: rgb(228, 166, 125);
+    color: red;
     border-radius: 4px;
     transition: all o.2s ease-out;
 
 }
 
 .fa-bars {
-    color: linear-gradient(90deg, rgb(226, 189, 148)0%, rgb(228, 185, 129)100%);
+    color: linear-gradient(90deg, rgb(3, 58, 8)0%, rgb(3, 82, 3)100%);
 }
 
 .nav-links-mobile{
@@ -116,4 +116,5 @@
         font-size: 2rem;
     }
 
+    
 }

@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from 'react'
 import { ItemDetail } from "../items/itemDetail";
 import { productList } from "../../constans/products"
+import { collection, getDocs, query, getDoc, doc } from "firebase/firestore"
+import { db } from "../firebase"
 import "./products.css"
 
 const taskFilterProduct = (itemId) => {
@@ -32,20 +34,34 @@ const taskFilterProduct = (itemId) => {
 export const ItemDetailContainer = () => {
     const { id } = useParams()
     const [productDetail, setProductDetail] = useState([])
+    /*
+        useEffect(() => {
+            let mounted = true
+            taskFilterProduct(id).then(result => {
+                setProductDetail(result)
+                console.log(productDetail)
+              }).then(result => {
+                console.log(result)
+              })
+              .catch( err => {
+                console.log(err)
+              })
+            return () => mounted = false;
+         }, []);*/
 
     useEffect(() => {
-        let mounted = true
-        taskFilterProduct(id).then(result => {
-            setProductDetail(result)
-            console.log(productDetail)
-        }).then(result => {
-            console.log(result)
-        })
-            .catch(err => {
-                console.log(err)
-            })
-        return () => mounted = false;
-    }, []);
+        const getFromFirebase = async () => {
+
+            const docRef = doc(db, "item", id)
+            const docSnapshot = await getDoc(docRef);
+
+            let pd = [{ id: docSnapshot.id, ...docSnapshot.data() }]
+            console.log(pd)
+            setProductDetail(pd)
+        }
+
+        getFromFirebase()
+    }, [])
 
     return (
         <div className="card-wrapper">
@@ -57,3 +73,4 @@ export const ItemDetailContainer = () => {
     )
 
 }
+

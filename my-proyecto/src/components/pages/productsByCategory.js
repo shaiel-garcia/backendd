@@ -1,6 +1,6 @@
 import React from "react";
 import { ItemListContainerByCategory } from "../items/itemListContainerByCategory";
-import { CommonLayout } from "../layouts/cammonLayouts"
+import { CommonLayout } from "../layouts/cammonLayout"
 
 
 export const ProductsByCategory = () => {
