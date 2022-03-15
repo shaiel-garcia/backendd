@@ -3,13 +3,15 @@ footer {
     font-size: 14px;
     text-align: center;
     padding: 32px;
-    background: linear-gradient(90deg, rgb(236, 193, 153)0%, rgb(202, 166, 142)100%); }
+    background: linear-gradient(90deg, rgb(3, 58, 8)0%, rgb(3, 82, 3)100%);
     strong {
       color: antiquewhite;
     }
-   
- a {
+    .footer-links {
+      margin-bottom: 24px;
+      a {
         margin: 0 8px;
         color: antiquewhite;
       }
-   
+    }
+  }

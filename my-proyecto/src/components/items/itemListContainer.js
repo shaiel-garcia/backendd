@@ -1,8 +1,10 @@
-
 import React from "react";
 import { useState, useEffect } from 'react';
 import { ItemList } from "./itemList";
 import "./products.css"
+import { collection, getDocs } from "firebase/firestore"
+import { db } from "../firebase"
+import { async } from "@firebase/util";
 
 
 
@@ -46,7 +48,50 @@ const productList = [
         "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620046/dummy-products/carrots.jpg",
         "category": "vegetables",
         "stock": 20
-    }
+    },
+    {
+        "id": 6,
+        "name": "Tomato - 1 Kg",
+        "price": 52,
+        "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620045/dummy-products/tomato.jpg",
+        "category": "vegetables",
+        "stock": 20
+    },
+    {
+        "id": 7,
+        "name": "Capsicum - 1 Kg",
+        "price": 30,
+        "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620045/dummy-products/capsicum.jpg",
+        "category": "vegetables",
+        "stock": 20
+    },
+    {
+        "id": 8,
+        "name": "Raspberry - 1 Kg",
+        "price": 60,
+        "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620045/dummy-products/raspberry.jpg",
+        "category": "Frutas",
+        "stock": 20
+    },
+    {
+        "id": 9,
+        "name": "Mango - 1 Kg",
+        "price": 30,
+        "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620045/dummy-products/mango.jpg",
+        "category": "Frutas",
+
+        "stock": 20
+    },
+    {
+        "id": 10,
+        "name": "Almonds - 1 Kg",
+        "price": 30,
+        "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620045/dummy-products/almonds.jpg",
+        "category": "frutos secos",
+        "stock": 20
+    },
+
+
 ]
 
 const task = new Promise((resolve, reject) => {
@@ -69,21 +114,37 @@ export const ItemListContainer = ({
 
 }) => {
     const [products, setProducts] = useState([])
+    /* 
+     useEffect(() => {
+         let mounted = true
+         task.then(result => {
+            setProducts(result)
+           }).then(result => {
+             console.log(result)
+           })
+           .catch( err => {
+             console.log(err)
+           }).finally( result => {
+             console.log("Su pedido ha finalizado")
+             
+           })
+         return () => mounted = false;
+       }, []);*/
 
     useEffect(() => {
-        let mounted = true
-        task.then(result => {
-            setProducts(result)
-        }).then(result => {
-            console.log(result)
-        })
-            .catch(err => {
-                console.log(err)
-            }).finally(result => {
-                console.log("Su pedido ha finalizado")
+        const getFromFirebase = async () => {
 
+            const query = collection(db, "item");
+            const snapshot = await getDocs(query);
+            let result = []
+            snapshot.forEach(doc => {
+                result.push({ id: doc.id, ...doc.data() })
             })
-        return () => mounted = false;
+            setProducts(result);
+        }
+
+        getFromFirebase()
+
     }, []);
 
     return (
@@ -96,3 +157,4 @@ export const ItemListContainer = ({
     )
 
 }
+

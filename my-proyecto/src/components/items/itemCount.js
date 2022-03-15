@@ -19,5 +19,3 @@ export const ItemCount = ({ stock, itemQuantity, setItemQuantity }) => {
     )
 
 }
-
-export default ItemCount;

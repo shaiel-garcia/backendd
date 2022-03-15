@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext, useState } from "react";
-import { CartContext } from "../../contexts/cartContext"
+import { CartContext } from "../../contexts/cardContext"
 import { CartPreview } from "../../cartWidget";
 
 
@@ -34,7 +34,7 @@ export const HeaderItemCart = () => {
                             <td>Sub Total</td>
                             <td>:</td>
                             <td>
-                                <strong>0</strong>
+                                <strong>{products.length}</strong>
                             </td>
                         </tr>
                     </tbody>

@@ -8,10 +8,11 @@ export const CartListContainer = ({ products }) => {
             {
                 products.map(
                     (item) => {
-                        <Cart item={item} />
+                        <Cart key={item.id} item={item} />
                     }
                 )
             }
         </div>
     )
 }
+

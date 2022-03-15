@@ -6,7 +6,7 @@ export const HeaderMenuLink = ({ categories }) => {
 
     return (
         <ul className="nav-menu">
-            {categories.map((item, index) => {
+            {categories.map((item) => {
                 return (
                     <NavLink key={item.id} className="nav-links" to={`/categories/${item.slug}`}>
                         <li>

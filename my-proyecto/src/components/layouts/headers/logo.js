@@ -1,6 +1,7 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../../assets/estilos/layouts/header.scss"
+import "../../../assets/scss/layouts/header.scss"
 
 
 export const Logo = ({ text }) => {
@@ -10,7 +11,7 @@ export const Logo = ({ text }) => {
             <Link to="/">
                 <img
                     className="logo"
-                    src={require("../../../assets/img/img.png")}
+                    src={require("../../../assets/logo1.png")}
                     alt="Veggy Brand Logo"
                 />
             </Link>
