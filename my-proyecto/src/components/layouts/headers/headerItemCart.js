@@ -6,7 +6,7 @@ import { CartPreview } from "../../cartWidget";
 
 
 export const HeaderItemCart = () => {
-    const { products, addItem, removeItem, clear, isInCart } = useContext(CartContext)
+    const { products, removeItem } = useContext(CartContext)
     const [isCartOpen, setIsCartOpen] = useState(false)
 
     const handleCartButton = (event) => {
@@ -34,7 +34,7 @@ export const HeaderItemCart = () => {
                             <td>Sub Total</td>
                             <td>:</td>
                             <td>
-                                <strong>{products.length}</strong>
+                                <strong>0</strong>
                             </td>
                         </tr>
                     </tbody>

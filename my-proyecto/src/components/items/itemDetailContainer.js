@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from 'react'
 import { ItemDetail } from "../items/itemDetail";
 import { productList } from "../../constans/products"
-import { collection, getDocs, query, getDoc, doc } from "firebase/firestore"
+import { getDoc, doc } from "firebase/firestore"
 import { db } from "../firebase"
 import "./products.css"
 
@@ -50,7 +50,7 @@ export const ItemDetailContainer = () => {
          }, []);*/
 
     useEffect(() => {
-        const getFromFirebase = async () => {
+        const obtenerDatos = async () => {
 
             const docRef = doc(db, "item", id)
             const docSnapshot = await getDoc(docRef);
@@ -60,7 +60,7 @@ export const ItemDetailContainer = () => {
             setProductDetail(pd)
         }
 
-        getFromFirebase()
+        obtenerDatos()
     }, [])
 
     return (
