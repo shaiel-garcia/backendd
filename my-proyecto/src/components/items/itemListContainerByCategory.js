@@ -46,7 +46,7 @@ export const ItemListContainerByCategory = () => {
 
             })
         return () => mounted = false;
-    }, []);
+    }, [category]);
 
     return (
         <div className="products-wrapper">

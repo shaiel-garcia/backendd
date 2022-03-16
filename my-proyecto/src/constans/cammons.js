@@ -33,9 +33,5 @@ export const categoriesItems = [
         "name": "Frutas",
         "slug": "frutas"
     },
-    {
-        "id": 3,
-        "name": "frutos secos",
-        "slug": "frutos-secos"
-    }
+
 ]

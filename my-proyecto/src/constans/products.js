@@ -83,20 +83,9 @@ export const productList = [
         },
         "stock": 20
     },
+
     {
         "id": 8,
-        "name": "Raspberry - 1 Kg",
-        "price": 60,
-        "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620045/dummy-products/raspberry.jpg",
-        "category": {
-            "id": 1,
-            "name": "Frutas",
-            "slug": "Frutas"
-        },
-        "stock": 20
-    },
-    {
-        "id": 9,
         "name": "Mango - 1 Kg",
         "price": 30,
         "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620045/dummy-products/mango.jpg",
@@ -107,18 +96,7 @@ export const productList = [
         },
         "stock": 20
     },
-    {
-        "id": 10,
-        "name": "Almonds - 1 Kg",
-        "price": 30,
-        "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620045/dummy-products/almonds.jpg",
-        "category": {
-            "id": 1,
-            "name": "Frutos secos",
-            "slug": "Frutos-secos"
-        },
-        "stock": 20
-    },
+
 
 
 ]

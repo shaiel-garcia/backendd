@@ -4,7 +4,7 @@ import { ItemList } from "./itemList";
 import "./products.css"
 import { collection, getDocs } from "firebase/firestore"
 import { db } from "../firebase"
-import { async } from "@firebase/util";
+
 
 
 
@@ -65,16 +65,9 @@ const productList = [
         "category": "vegetables",
         "stock": 20
     },
+
     {
         "id": 8,
-        "name": "Raspberry - 1 Kg",
-        "price": 60,
-        "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620045/dummy-products/raspberry.jpg",
-        "category": "Frutas",
-        "stock": 20
-    },
-    {
-        "id": 9,
         "name": "Mango - 1 Kg",
         "price": 30,
         "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620045/dummy-products/mango.jpg",
@@ -82,14 +75,7 @@ const productList = [
 
         "stock": 20
     },
-    {
-        "id": 10,
-        "name": "Almonds - 1 Kg",
-        "price": 30,
-        "image": "https://res.cloudinary.com/sivadass/image/upload/v1493620045/dummy-products/almonds.jpg",
-        "category": "frutos secos",
-        "stock": 20
-    },
+
 
 
 ]
@@ -108,7 +94,6 @@ const task = new Promise((resolve, reject) => {
 
 
 export const ItemListContainer = ({
-    children,
     greeting,
 
 

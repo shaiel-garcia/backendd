@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { CartContext } from "./contexts/cardContext";
-import { addDoc, collection, Timestamp } from "firebase/firestore";
+import { addDoc, collection } from "firebase/firestore";
 import { db } from "./firebase";
 
 export const CartPreview = ({ isCartOpen }) => {
-    const { products, addItem, removeItem, clear, isInCart } = useContext(CartContext)
+    const { products, removeItem } = useContext(CartContext)
 
     const checkout = () => {
         const itemsToBuy = products.map(item => {
