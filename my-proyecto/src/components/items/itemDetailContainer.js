@@ -73,3 +73,5 @@ export const ItemDetailContainer = () => {
     )
 
 }
+
+export default taskFilterProduct;
