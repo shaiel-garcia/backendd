@@ -15,4 +15,3 @@ export const CartListContainer = ({ products }) => {
         </div>
     )
 }
-

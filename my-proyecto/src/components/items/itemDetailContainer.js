@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from 'react'
-import { ItemDetail } from "../items/itemDetail";
+import { ItemDetail } from "./itemDetail";
 import { productList } from "../../constans/products"
 import { getDoc, doc } from "firebase/firestore"
 import { db } from "../firebase"
@@ -73,4 +73,3 @@ export const ItemDetailContainer = () => {
     )
 
 }
-
