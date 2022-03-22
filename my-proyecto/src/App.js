@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Home } from "./components/pages/home"
 import { ItemDetail } from "./components/pages/itemDetail";
-import './App.css';
+import './App.scss';
 import { ProductsByCategory } from "./components/pages/productsByCategory";
 import { Cart } from "./components/pages/cart";
 import { CartProvider } from "./components/contexts/cardContext";
@@ -27,6 +27,8 @@ function App() {
 }
 
 export default App;
+
+
 
 
 

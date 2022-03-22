@@ -2,7 +2,7 @@ import React from "react";
 import { useContext, useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 import "../../assets/scss/products/detail.css"
-import { ItemCount } from "../items/itemCount"
+import { ItemCount } from "./itemCount"
 import { CartContext } from "../contexts/cardContext";
 import "@fortawesome/react-fontawesome"
 
