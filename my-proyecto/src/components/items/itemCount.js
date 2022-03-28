@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "../button.css"
 
+export const ItemCount = ({ stock }) => {
 
-
-export const ItemCount = ({ stock, itemQuantity, setItemQuantity }) => {
+    const [itemQuantity, setItemQuantity] = useState(0)
 
 
     return (

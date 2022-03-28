@@ -7,4 +7,5 @@ export const ItemBody = ({ product }) => {
             <p className="product-price">$ {product.price}</p>
         </div>
     )
-} 
+}
+
