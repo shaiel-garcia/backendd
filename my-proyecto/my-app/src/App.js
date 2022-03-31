@@ -25,7 +25,7 @@ const prodList = [
   { name: "Banana", id: "007", categoria: "Frutas", type: "Frutas", price: "30", stock: "22", },
   { name: "Mixs", id: "008", categoria: "Frutos secos", type: "Frutos secos", price: "50", stock: "24", },
   { name: "Tomate", id: "009", categoria: "Verduras", type: "Verduras", price: "60", stock: "11", },
-  { name: "Naranja", id: "010", categoria: "Frutas", type: "Frutas", price: "70", stock: "10", },
+  { name: "Naranja", id: "010", categoria: "Frutas", type: "Frutas", price: "30", stock: "10", },
   { name: "Frambuesa", id: "011", categoria: "Frutas", type: "Frutas", price: "40", stock: "7", },
   { name: "Morron", id: "012", categoria: "Verduras", type: "Verduras", price: "30", stock: "9", },
 ]
