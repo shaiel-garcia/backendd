@@ -26,4 +26,6 @@ const ItemDetail = ({ item, addBasket, loading }) => {
     )
 }
 
-export default ItemDetail
+export default ItemDetail;
+
+
