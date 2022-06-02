@@ -28,11 +28,11 @@ class Usuario {
 }
 let usuario = new Usuario("Blanca", "Robles", [], [])
 console.log(usuario.getFullName());
-usuario.addPet("Marvel")
-usuario.addPet("Mü")
+usuario.addPet("Giuliana")
+usuario.addPet("Bianca")
 usuario.addPet("Simon")
 usuario.addPet("Cala")
-usuario.addPet("Rocco")
+usuario.addPet("Marvel")
 usuario.addBook("El desorden que dejas", "Carla Montero")
 usuario.addBook("El lobo estepario", "Hermann Hesse")
 usuario.addBook("Donde el corazon te lleve", "Susana Tamaro")
