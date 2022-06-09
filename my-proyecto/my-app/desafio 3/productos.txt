@@ -1,0 +1,1 @@
+[{"name":"fideos","price":"47","stock":"30","id":1},{"name":"Arroz","price":"95","stock":"30","id":2},{"name":"Galletitas","price":"160","stock":"60","id":3},{"name":"cereales","price":"160","stock":"15","id":4},{"name":"Tomate","price":"30","stock":"20","id":5}]
