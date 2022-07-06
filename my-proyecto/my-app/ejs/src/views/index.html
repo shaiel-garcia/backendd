@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head.html') %>
+</head>
+
+<body>
+    <main class="container">
+        <div class="redirectBottom">
+            <a href="/productos/create" class="btn btn-secondary btn-lg p-2 m-2">Crea un nuevo producto</a>
+        </div>
+
+        <h1 class="display-1 text-center textColor my-3">Lista de Productos</h1>
+
+        <% if(dataProducts.length> 0) { %>
+            <table class="table table-dark table-hover align-middle">
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-center">Name</th>
+                        <th scope="col" class="text-center">Price</th>
+                        <th scope="col" class="text-center">Image</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <% dataProducts.forEach(product=> { %>
+                        <tr>
+                            <th scope="row" class="text-center">
+                                <%= product.nombre %>
+                            </th>
+                            <td class="text-center">$ <%= product.price %>
+                            </td>
+                            <td class="text-center">
+                                <img height="75px" width="120px" src=<%=product.url %> alt=<%= product.nombre %> />
+                            </td>
+                        </tr>
+                        <% }) %>
+                </tbody>
+            </table>
+            <% } else { %>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-md-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="display-5 text-center">Esta lista se encuentra vacia</h2>
+                                <p class="lead">Aún no hay productos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+    </main>
+</body>
+
+</html>
