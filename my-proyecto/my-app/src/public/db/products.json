@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "timestamp": 1656942038768,
+        "nombre": "Tennis Racket",
+        "description": "Marca Babolat",
+        "codigo": "tr",
+        "url": "https://res.cloudinary.com/dukuzakaw/image/upload/v1653744011/backendProducts/itemProducts/tennisRacket_lovrcb.jpg",
+        "precio": 99.18,
+        "stock": 25
+    },
+    {
+        "id": 2,
+        "timestamp": 1656944746776,
+        "nombre": "Smart TV",
+        "description": "LG High Quality",
+        "codigo": "st",
+        "url": "https://res.cloudinary.com/dukuzakaw/image/upload/v1653743999/backendProducts/itemProducts/tv_rscllh.jpg",
+        "precio": 396.33,
+        "stock": 24
+    },
+    {
+        "id": 3,
+        "timestamp": 1657075112303,
+        "nombre": "Iphone 13",
+        "description": "New Apple phone",
+        "codigo": "ip",
+        "url": "https://res.cloudinary.com/dukuzakaw/image/upload/v1653743999/backendProducts/itemProducts/iphone12_plwbjy.jpg",
+        "precio": 900.00,
+        "stock": 10
+    },
+    {
+        "id": 4,
+        "timestamp": 1657126195211,
+        "nombre": "Earpods",
+        "description": "New Earpods Apple",
+        "codigo": "ep",
+        "url": "https://res.cloudinary.com/dukuzakaw/image/upload/v1653743999/backendProducts/itemProducts/airpods_ubhpjs.jpg",
+        "precio": 249.99,
+        "stock": 6
+    }
+]

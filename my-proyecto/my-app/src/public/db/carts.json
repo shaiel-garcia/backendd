@@ -1,0 +1,54 @@
+[
+    {
+        "id": 3,
+        "timestamp": 1657072014866,
+        "products": [
+            {
+                "id": 1,
+                "timestamp": 1656942038768,
+                "nombre": "Tennis Racket",
+                "description": "Marca Babolat",
+                "codigo": "tr",
+                "url": "https://res.cloudinary.com/dukuzakaw/image/upload/v1653744011/backendProducts/itemProducts/tennisRacket_lovrcb.jpg",
+                "precio": 99.18,
+                "stock": 25
+            },
+            {
+                "id": 2,
+                "timestamp": 1656944746776,
+                "nombre": "Smart TV",
+                "description": "LG High Quality",
+                "codigo": "st",
+                "url": "https://res.cloudinary.com/dukuzakaw/image/upload/v1653743999/backendProducts/itemProducts/tv_rscllh.jpg",
+                "precio": 396.33,
+                "stock": 24
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "timestamp": 1657071606725,
+        "products": [
+            {
+                "id": 2,
+                "timestamp": 1656944746776,
+                "nombre": "Smart TV",
+                "description": "LG High Quality",
+                "codigo": "st",
+                "url": "https://res.cloudinary.com/dukuzakaw/image/upload/v1653743999/backendProducts/itemProducts/tv_rscllh.jpg",
+                "precio": 396.33,
+                "stock": 24
+            },
+            {
+                "id": 1,
+                "timestamp": 1656942038768,
+                "nombre": "Tennis Racket",
+                "description": "Marca Babolat",
+                "codigo": "tr",
+                "url": "https://res.cloudinary.com/dukuzakaw/image/upload/v1653744011/backendProducts/itemProducts/tennisRacket_lovrcb.jpg",
+                "precio": 99.18,
+                "stock": 25
+            }
+        ]
+    }
+]
